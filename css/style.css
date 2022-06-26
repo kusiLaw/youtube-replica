@@ -74,7 +74,7 @@ input[type=text], select {
   }
   .content-items{
     flex: 1 1 0;
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
   }
   
   h3{
@@ -90,15 +90,21 @@ input[type=text], select {
     align-items: center;
     padding: 50px;
  }
-
+ .thumbnail-items{
+    overflow: hidden;
+ }
  
+ .content div .comment{
+    margin-bottom: 2px solid red;
+ }
 #views{
     margin-bottom: 2px solid green; 
     font-style: italic;
-    margin-bottom: 2px solid;
+   
  }
 ul{
     margin-bottom: 20px;
+   
 }
  ul li{
     list-style-type: none;
@@ -107,6 +113,7 @@ ul{
     padding: 10px;
     border-radius: 60px;
     /* margin: 10px; */
+   
    
 
  }
