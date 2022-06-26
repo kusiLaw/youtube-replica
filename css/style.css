@@ -6,13 +6,20 @@
 
 .nav{
     height: 100px;
-    background-color: aqua;
+    width: 100%;
+    background-color: white;
     padding: 20px;
    
     display: flex;
     gap: 10px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid rgb(216, 215, 215);
+    z-index: 200;
 }
+
+
 .nav .logo{
     height: 40px;
     width: auto;
@@ -29,7 +36,7 @@
     padding: 10px;
     /* background-color: blueviolet; */
     width: 60%;
-
+    
 }
 
 .nav div .items-search,.nav div input {
@@ -40,28 +47,74 @@
 input[type=text], select {
     width: 400px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(42, 86, 209);
     border-radius: 4px;
    
   }
-/* ul{
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
- 
-}
-ul li{
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid;
-}
 
 
-.nav li .search{
-    height: 40px;
+  .content{
+    display: flex;
+    margin-top: 110px;
     width: 100%;
-}
-.nav li a{
+    
+    padding-top:10px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+    
+    /* height: 100vh; */
+    background-color: #0000000D;
+  }
+  .content video{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content-items{
+    flex: 1 1 0;
+    border: 1px solid rebeccapurple;
+  }
+  
+  h3{
+    line-height: 2.6rem;
+    font-weight: 400;
+    
+ }
+
+ .content .thumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*horizontally**/ /*vertically if column*/
+    align-items: center;
+    padding: 50px;
+ }
+
  
-} */
+#views{
+    margin-bottom: 2px solid green; 
+    font-style: italic;
+    margin-bottom: 2px solid;
+ }
+ul{
+    margin-bottom: 20px;
+}
+ ul li{
+    list-style-type: none;
+    display: inline;
+    background-color: #0000001A;
+    padding: 10px;
+    border-radius: 60px;
+    /* margin: 10px; */
+   
+
+ }
+
+ /* #playlist{
+    width: 50%;
+    height: auto;
+ } */
+ iframe{
+    margin-bottom: 15px;
+ }
